@@ -6,9 +6,9 @@ set _fGreen=[32m
 set _fRed=[31m
 set _RESET=[0m
 set "_dwnlds=0"
-set "_target=target"
-set "_clk=clk"
-set "_bin=bin"
+set "_target=atsam4sd32b"
+set "_clk=2 Mhz"
+set "_bin=.\binaries\firmware.elf"
 
 Echo %_target% flashing started
 :loop
