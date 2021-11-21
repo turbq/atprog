@@ -1,0 +1,12 @@
+Useful examples
+===========
+Write fuses
+atprogram -t atmelice -i swd -cl "2 MHz" -d atsam4sd32b write -fs --values 0x02
+==========================
+FLUSH + chiperase + verify
+atprogram -t atmelice -i swd -cl "2 MHz" -d atsam4sd32b program -c --verify -f .\binaries\mfpou.elf write -fs --values 0x02
+atprogram -t atmelice -i swd -cl "2 MHz" -d atsam4sd32b program -c --verify -f .\binaries\mfpou.elf
+===============
+Verifying
+atprogram -t atmelice -i swd -cl "2 MHz" -d atsam4sd32b verify -f .\binaries\mfpou.elf
+atprogram -t atmelice -i swd -cl "2 MHz" -d atsam4sd32b verify -fs --values 02
