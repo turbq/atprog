@@ -1,3 +1,3 @@
-cd ..
-echo "PATH=%~dp0atpackmanager;%~dp0atbackend;%~dp0batch;%PATH%"
+@echo off
+set "PATH=%~dp0..\atpackmanager;%~dp0..\atbackend;%~dp0..\batch;%PATH%"
 start cmd /k type .\atbackend\examples.txt
