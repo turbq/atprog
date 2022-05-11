@@ -21,6 +21,8 @@ if /i ["%target%"] == ["atsam4sd32b"] (
   atprogram -t atmelice -i swd -cl "%clk%" -d %target% program -c --verify -f %bin% write -fs --values 0x02
 ) else if ["%target%"] == ["attiny13"] (
   atprogram -t atmelice -i isp -cl "%clk%" -d %target% program -c -f %bin%
+) else if ["%target%"] == ["atxmega256a3u"] (
+  atprogram -t atmelice -i pdi -cl "%clk%" -d %target% program -c -f %bin%
 ) else (
   echo target not supported
   exit /b 1

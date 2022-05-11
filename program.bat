@@ -6,9 +6,9 @@ set _fGreen=[32m
 set _fRed=[31m
 set _RESET=[0m
 set "_dwnlds=0"
-set "_target=target"
-set "_clk=clk"
-set "_bin=bin"
+set "_target=atxmega256a3u"
+set "_clk=32 kHz"
+set "_bin=.\binaries\firmware.elf"
 
 Echo %_target% flashing started
 :loop
