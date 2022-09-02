@@ -1,4 +1,4 @@
-rem @echo off
+@echo off
 setlocal
 
 set "PATH=%~dp0atbackend;%~dp0batch;%PATH%"
