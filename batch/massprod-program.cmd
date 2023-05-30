@@ -18,7 +18,7 @@ set "clk=%~2"
 set "bin=%~3"
 
 if /i ["%target%"] == ["atsam4sd32b"] (
-  atprogram -t atmelice -i swd -cl "%clk%" -d %target% program -c --verify -f %bin% write -fs --values 0x02
+  atprogram -t atmelice -i swd -cl "%clk%" -d %target% write -fs --values 0x02 program -c --verify -f %bin%
 ) else if ["%target%"] == ["attiny13"] (
   atprogram -t atmelice -i isp -cl "%clk%" -d %target% program -c -f %bin%
 ) else if ["%target%"] == ["atxmega256a3u"] (
